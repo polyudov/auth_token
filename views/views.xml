@@ -8,15 +8,13 @@
         <field name="arch" type="xml">
             <xpath expr="//notebook" position="inside">
                 <page string="Tokens" groups="base.group_system">
-                    <group>
-                        <field name="token_ids">
-                            <tree editable="top">
-                                <field name="token"/>
-                                <field name="active"/>
-                                <field name="create_date"/>
-                            </tree>
-                        </field>
-                    </group>
+                    <field name="token_ids" nolabel="1">
+                        <tree editable="top">
+                            <field name="token"/>
+                            <field name="active"/>
+                            <field name="create_date"/>
+                        </tree>
+                    </field>
                 </page>
             </xpath>
         </field>

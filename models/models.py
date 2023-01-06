@@ -22,9 +22,9 @@ class Token(models.Model):
 
         return res
 
-    token = fields.Char(string='Token')
+    token = fields.Char('Token')
     active = fields.Boolean('Active')
-    user_id = fields.Many2one('res.users', string=u'User')
+    user_id = fields.Many2one('res.users', string='User')
 
 
 class User(models.Model):
