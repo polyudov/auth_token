@@ -2,7 +2,7 @@ name: Semantic Pull Request
 
 on:
   pull_request:
-    branches: [ main ]
+    branches: [ 16.0 ]
 
 permissions:
   contents: read
